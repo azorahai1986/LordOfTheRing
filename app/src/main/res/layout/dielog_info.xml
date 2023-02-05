@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    app:cardCornerRadius="20sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20sp">
+
+        <ImageView
+            android:id="@+id/imageDialog"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="8"
+            android:src="@drawable/ic_launcher_background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textNomination"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/textNomination"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintVertical_weight="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageDialog"
+            android:layout_marginTop="20sp"
+            style="@style/textDialog"
+            android:text="Nominada a 20 premios oscar"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textWins"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textNomination"
+            style="@style/textDialog"
+            android:text="Nominada a 20 premios oscar"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textrecaudacion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textWins"
+            android:text="Nominada a 20 premios oscar"
+            style="@style/textDialog"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textRotenTomatos"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textrecaudacion"
+            android:text="Nominada a 20 premios oscar"
+            style="@style/textDialog"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textExit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/textNomination"
+            app:layout_constraintTop_toBottomOf="@id/textRotenTomatos"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:text="salir de la info"
+            style="@style/textDialog"
+            android:textColor="@color/teal_700"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textDialog">
+        <item name="android:background"></item>
+        <item name="android:fontFamily">@string/common_google_play_services_notification_ticker</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+
+
+    </style>
+</resources>
